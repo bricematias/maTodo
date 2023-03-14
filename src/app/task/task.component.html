@@ -1,0 +1,16 @@
+<div class="container">
+  <span>Tache n° : {{taskId}}</span>
+  <div>
+    <span *ngIf="task">Task : {{task}}</span>
+  </div>
+  <div>
+    <span> Set task : </span>
+    <input type="text" [(ngModel)]="task" />
+  </div>
+  <div>
+    <button (click)="deleteTask()">DELETE</button>
+    <button (click)="addTask()">Add Task</button>
+  </div>
+</div>
+
+
