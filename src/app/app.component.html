@@ -1,6 +1,10 @@
 <h1 style="text-align:center">Todo List</h1>
 <div *ngFor="let task of task">
-  <app-task [taskId]="task.id"></app-task>
+  <app-card-component>
+    <app-task [taskId]="task.id">
+
+    </app-task>
+  </app-card-component>
 </div>
 
 

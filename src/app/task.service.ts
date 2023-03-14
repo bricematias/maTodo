@@ -29,7 +29,6 @@ export class TaskService {
 
   addTask(): void {
     const id = this.tasks.length === 0 ? 1 : Math.max.apply(Math, this.tasks.map((task) => { return task.id})) + 1;
-
     this.tasks.push({
       id,
     });
